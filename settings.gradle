@@ -1,0 +1,1 @@
+include ':app', ':DiaryApp', ':file', ':intent'
