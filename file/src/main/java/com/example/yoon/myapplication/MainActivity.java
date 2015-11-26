@@ -26,8 +26,6 @@ public class MainActivity extends Activity {
     String fileName;
 
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("간단한 일기장");
