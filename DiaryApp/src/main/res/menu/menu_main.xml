@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:id="@+id/reRead"
+        android:title="다시불러오기" />
+    <item
+        android:id="@+id/delDiary"
+        android:title="일기삭제"/>
+
+    <item
+        android:title="글씨 크기">
+        <menu>
+            <item
+                android:id="@+id/sizeUp"
+                android:title="크게"/>
+            <item
+                android:id="@+id/sizeNormal"
+                android:title="보통"/>
+            <item
+                android:id="@+id/sizeSmall"
+                android:title="작게"/>
+
+        </menu>
+    </item>
+
+</menu>
+
+
