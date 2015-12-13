@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         setTitle("가수 그룹 관리 DB");
 
+
         editName = (EditText)findViewById(R.id.editName);
         editNum = (EditText)findViewById(R.id.editNum);
         editNameResult = (EditText)findViewById(R.id.editNameResult);
