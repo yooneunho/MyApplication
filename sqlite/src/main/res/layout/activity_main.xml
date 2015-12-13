@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Sqlite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름 : "/>
+        <EditText
+            android:id="@+id/editName"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인원 : "/>
+        <EditText
+            android:id="@+id/editNum"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnClear"
+            android:text="초기화"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btnInsert"
+            android:text="입력"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btnModify"
+            android:text="수정"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="삭제"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btnInQuiry"
+            android:text="조회"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#00FF00">
+        <EditText
+            android:id="@+id/editNameResult"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:editable="false"/>
+        <EditText
+            android:id="@+id/editNumResult"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:editable="false"/>
+    </LinearLayout>
+
+</LinearLayout>
